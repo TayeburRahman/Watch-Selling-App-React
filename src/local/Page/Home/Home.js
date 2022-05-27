@@ -1,7 +1,7 @@
+import ServiceCompo from 'local/DashbordHome/serviceCompo';
 import Sponsors from 'local/HomeFastSection/Sponser';
 import React from 'react';
 import HomeBanner from '../../Banner/HomeBanner';
-import DashboardHome from '../../DashbordHome/DashboardHome';
 import HomeFastSection from '../../HomeFastSection/HomeFastSection';
 import HomeProduct from '../../HomeProduct/HomeProduct';
 import ImageCardMain from '../../ImageCardHome/ImageCartMain';
@@ -17,7 +17,7 @@ const Home = () => {
              <ImageCardMain></ImageCardMain>
              <HomeFastSection></HomeFastSection>
              <HomeProduct></HomeProduct> 
-             <DashboardHome></DashboardHome>
+             <ServiceCompo></ServiceCompo>
              <Sponsors></Sponsors>
              <HomeShowReview></HomeShowReview>
              <Footer></Footer>

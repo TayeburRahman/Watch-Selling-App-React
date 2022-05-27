@@ -43,8 +43,8 @@
 }
 
 .Dropdown:hover {
-  color: rgb(73, 73, 73);
-  background-color: rgb(21, 230, 167);
+  color: rgb(255, 255, 255);
+  background-color: rgb(180, 17, 17);
 }
 
 .text-color-tag {

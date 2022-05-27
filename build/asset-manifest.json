@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d038a1f.css",
-    "main.js": "/static/js/main.e86eaf9a.js",
+    "main.css": "/static/css/main.a47f003c.css",
+    "main.js": "/static/js/main.a06f1d15.js",
     "static/media/faqbackground.png": "/static/media/faqbackground.2199f2005548dc887f81.png",
     "static/media/watch1.png": "/static/media/watch1.2dd9fd7d51708bf44c2e.png",
     "static/media/bg-profile.jpeg": "/static/media/bg-profile.af1219a742e09fc7b612.jpeg",
@@ -12,13 +12,9 @@
     "static/media/C1.png": "/static/media/C1.77866d118bff74653e31.png",
     "static/media/visaCard.png": "/static/media/visaCard.a58ef200c8ef79745947.png",
     "static/media/team-1.jpg": "/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
-    "static/media/bruce-mars.jpg": "/static/media/bruce-mars.8a606c4a6dab54c9ceff.jpg",
-    "static/media/marie.jpg": "/static/media/marie.c28f32663b6432b46f78.jpg",
     "static/media/leftbanner.png": "/static/media/leftbanner.822114b96ede9c4f5175.png",
     "static/media/team-2.jpg": "/static/media/team-2.13ae2ce3e12f4cfed420.jpg",
     "static/media/team-3.jpg": "/static/media/team-3.0ef0be95e6850814c79e.jpg",
-    "static/media/ivana-square.jpg": "/static/media/ivana-square.f7bc23b269d1d2509c82.jpg",
-    "static/media/kal-visuals-square.jpg": "/static/media/kal-visuals-square.3210e28a48ff572ae88b.jpg",
     "static/media/team-4.jpg": "/static/media/team-4.85c82b6e60178804017f.jpg",
     "static/media/logo-slack.svg": "/static/media/logo-slack.7c47c5aa474b5c4fb39fcf05ffb8e4e7.svg",
     "static/media/logo-xd.svg": "/static/media/logo-xd.6e37886f94dba0c2967ece68a152e30c.svg",
@@ -27,11 +23,11 @@
     "static/media/logo-jira.svg": "/static/media/logo-jira.c19fd4e416babfbd0fdb0a794188c601.svg",
     "index.html": "/index.html",
     "static/media/logo-atlassian.svg": "/static/media/logo-atlassian.f2b0e8570a4b4ce768854ff3dad1a6e1.svg",
-    "main.8d038a1f.css.map": "/static/css/main.8d038a1f.css.map",
-    "main.e86eaf9a.js.map": "/static/js/main.e86eaf9a.js.map"
+    "main.a47f003c.css.map": "/static/css/main.a47f003c.css.map",
+    "main.a06f1d15.js.map": "/static/js/main.a06f1d15.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d038a1f.css",
-    "static/js/main.e86eaf9a.js"
+    "static/css/main.a47f003c.css",
+    "static/js/main.a06f1d15.js"
   ]
 }

@@ -33,7 +33,7 @@ const HomeProduct = () => {
         <Box className="row" style={{margin:"0"}}>
         {isAllProduct.filter(product => product.category === "digitalWatch").slice(0, 8).map((pd,idx)  => (
            <Box className="col-lg-3 col-md-3 col-sm-12" sx={{ padding: 0 }}>
-             <Card key={idx} className="boxShadowCard m-1 ps-4 pe-4" sx={{ maxWidth: 345}}>
+             <Card key={idx} className="boxShadowCard m-1 ps-2 pe-2" sx={{ maxWidth: 345}}>
             <CardMedia
             className="productCardImage"
               component="img"
@@ -79,7 +79,7 @@ const HomeProduct = () => {
 
         {isAllProduct.filter(product => product.category === "phoneCover").slice(0, 6).map((pd,idx) => (
            <Box className="col-lg-2 col-md-2 col-sm-6" sx={{ padding: 0 }}>
-             <Card key={idx} className="boxShadowCard m-1 ps-4 pe-4" sx={{ maxWidth: 345}}>
+             <Card key={idx} className="boxShadowCard m-1 ps-2 pe-2" sx={{ maxWidth: 345}}>
             <CardMedia
             className="productCardImage"
               component="img"
@@ -89,17 +89,8 @@ const HomeProduct = () => {
               alt="green iguana"
             />
              <br />  
-            <Rating
-              className="Rating"
-              initialRating={pd.rating}
-              emptySymbol="fa fa-star-o fa-2x Rating"
-              fullSymbol="fa fa-star fa-2x Rating"
-              fractions={2}
-              readonly
-              style={{fontSize: '11px'}}
-            />{" "}
-            <br />  
-            <Typography gutterBottom variant="subtitle2" component="div" style={{fontSize:"16px"}}>
+             
+            <Typography gutterBottom variant="subtitle2" component="div" style={{fontSize:"14px"}}>
               {pd.name}
             </Typography>
             <div className="d-flex product-row">
@@ -107,7 +98,7 @@ const HomeProduct = () => {
               <p class="ms-3 me-3">{pd.updatePrice} €</p>
             </div>
             <Link to={`/product/${pd._id}`} style={{textDecoration: 'none'}}>
-              <button class="button-87" role="button"> Shop Now
+              <button class="button-87" role="button" style={{fontSize:"12px"}}> Shop Now
                <span className="ms-2">
                   {" "}
                   <i class="fas fa-shopping-cart"></i>
@@ -125,7 +116,7 @@ const HomeProduct = () => {
          </Typography>
         {isAllProduct.filter(product => product.category === "headphone").slice(0, 6).map((pd,idx) => (
            <Box className="col-lg-2 col-md-2 col-sm-6" sx={{ padding: 0 }}>
-             <Card key={idx} className="boxShadowCard m-1 ps-4 pe-4" sx={{ maxWidth: 345}}>
+             <Card key={idx} className="boxShadowCard m-1 ps-2 pe-2" sx={{ maxWidth: 345}}>
             <CardMedia
             className="productCardImage"
               component="img"
@@ -135,17 +126,8 @@ const HomeProduct = () => {
               alt="green iguana"
             />
              <br />  
-            <Rating
-              className="Rating"
-              initialRating={pd.rating}
-              emptySymbol="fa fa-star-o fa-2x Rating"
-              fullSymbol="fa fa-star fa-2x Rating"
-              fractions={2}
-              readonly
-              style={{fontSize: '11px'}}
-            />{" "}
-            <br />  
-            <Typography gutterBottom variant="subtitle2" component="div" style={{fontSize:"17px"}}>
+              
+            <Typography gutterBottom variant="subtitle2" component="div" style={{fontSize:"14px"}}>
               {pd.name}
             </Typography>
             <div className="d-flex product-row">
@@ -153,7 +135,7 @@ const HomeProduct = () => {
               <p class="ms-3 me-3">{pd.updatePrice} €</p>
             </div>
             <Link to={`/product/${pd._id}`} style={{textDecoration: 'none'}}> 
-              <button class="button-87" role="button"> Shop Now
+              <button class="button-87" role="button" style={{fontSize:"12px"}}> Shop Now
               <span className="ms-2">
                   {" "}
                   <i class="fas fa-shopping-cart"></i>

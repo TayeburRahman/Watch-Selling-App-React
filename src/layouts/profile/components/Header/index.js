@@ -1,18 +1,3 @@
-/**
-=========================================================
-* Watch Selling App React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 import AppBar from "@mui/material/AppBar";
 // @mui material components
 import Card from "@mui/material/Card";
@@ -21,14 +6,13 @@ import Icon from "@mui/material/Icon";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import backgroundImage from "assets/images/bg-profile.jpeg";
-// Images
-import burceMars from "assets/images/bruce-mars.jpg";
 // Watch Selling App React base styles
 import breakpoints from "assets/theme/base/breakpoints";
 import MDAvatar from "components/MDAvatar";
 // Watch Selling App React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
+import useAuth from "Firebase/Hooks/useAuth";
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
@@ -41,6 +25,7 @@ import { useEffect, useState } from "react";
 function Header({ children }) {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");
   const [tabValue, setTabValue] = useState(0);
+  const { user, logOut,admin } = useAuth();
 
   useEffect(() => {
     // A function that sets the orientation state of the tabs.
@@ -94,15 +79,15 @@ function Header({ children }) {
       >
         <Grid container spacing={3} alignItems="center">
           <Grid item>
-            <MDAvatar src={burceMars} alt="profile-image" size="xl" shadow="sm" />
+            <MDAvatar src={user.photoURL} alt="profile-image" size="xl" shadow="sm" />
           </Grid>
           <Grid item>
             <MDBox height="100%" mt={0.5} lineHeight={1}>
               <MDTypography variant="h5" fontWeight="medium">
-                Richard Davis
+               {user.displayName}
               </MDTypography>
               <MDTypography variant="button" color="text" fontWeight="regular">
-                CEO / Co-Founder
+                 Admin
               </MDTypography>
             </MDBox>
           </Grid>

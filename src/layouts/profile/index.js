@@ -20,8 +20,6 @@ import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 // Overview page components
 import Header from "layouts/profile/components/Header";
 import PlatformSettings from "layouts/profile/components/PlatformSettings";
-// Data
-import profilesListData from "layouts/profile/data/profilesListData";
 import { useEffect, useState } from "react";
  
 
@@ -77,7 +75,7 @@ function Overview() {
               <Divider orientation="vertical" sx={{ mx: 0 }} />
             </Grid>
             <Grid item xs={12} xl={4}>
-              <ProfilesList title="conversations" profiles={profilesListData} shadow={false} />
+              <ProfilesList title="Add New Admin" />
             </Grid>
           </Grid>
         </MDBox>

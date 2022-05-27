@@ -1,6 +1,4 @@
  
-// @mui material components
-// Watch Selling App React components
 import { Icon } from "@mui/material";
 import MDBox from "components/MDBox";
 import MDButton from "components/MDButton";

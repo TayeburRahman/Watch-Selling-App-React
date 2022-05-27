@@ -67,7 +67,12 @@ const LoginModal = ({ handleClose, open, booking, date }) => {
           <Typography id="spring-modal-title" variant="h6" component="h2">
             LOGIN
           </Typography>
-
+          <Typography variant="subtitle1" component="div">
+            Admin email: admin@admin.com
+          </Typography>
+          <Typography variant="subtitle1" component="div">
+            Admin Password: 123456
+          </Typography>
           <form onSubmit={handelLogin}>
             <TextField
               sx={{ width: "90%", m: 1 }}

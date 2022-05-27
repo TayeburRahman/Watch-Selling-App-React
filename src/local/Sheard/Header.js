@@ -14,9 +14,9 @@ const Header = () => {
   const [open, setOpen] = React.useState(false);
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true);
-  const { user, logOut } = useAuth();
+  const { user, logOut,admin } = useAuth();
   const [Products, setProduct] = useState([]); 
-  console.log(Products)
+  console.log(user)
  
   
     useEffect(() => {
@@ -56,9 +56,14 @@ const Header = () => {
               <NavDropdown title="DASHBOARD" className="text-color-mnu" id="collasible-nav-dropdown"
               style={{marginTop: "-8px"}}
               >
-                <NavDropdown.Item as={HashLink} className="Dropdown" to="/dashboard" >
-                <h6>Dashboard</h6> 
+                {
+                   admin &&
+                  <NavDropdown.Item as={HashLink} className="Dropdown" to="/dashboard" >
+                  <h6>Dashboard</h6> 
                 </NavDropdown.Item>
+                 
+                }
+                 
                 <NavDropdown.Item as={HashLink} className="Dropdown" to="/order/user">
                 <h6>Your Orders</h6>
                 </NavDropdown.Item>

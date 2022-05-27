@@ -18,8 +18,6 @@ import Projects from "./components/Projects";
 
 
 
-
-
 function Dashboard() {
   const { sales, tasks } = reportsLineChartData;
 
