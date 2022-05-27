@@ -38,7 +38,7 @@ export default function TransitionsModal({handleClose, open}) {
               reset();
             }
           });
-        console.log(data);
+        // console.log(data);
       };
 
   return (

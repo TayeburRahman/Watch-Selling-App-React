@@ -20,10 +20,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import EditModal from "./EditModal";
 
-
-
-
-
+ 
 function Billing() {
   const [product, setAllProduct] = useState([{}]);  
   const [isDelete, setIsDelete] = useState(false);
@@ -53,7 +50,7 @@ function Billing() {
      }, [open,isDelete,product]);
     // ------------------------
   const handleDeleteOrders = (id) => {
-      console.log(id)
+      // console.log(id)
     const url = `https://sleepy-journey-86126.herokuapp.com/deleteProduct/${id}`;
     Swal.fire({
       title: "Are you sure?",
@@ -70,7 +67,7 @@ function Billing() {
         })
           .then((res) => res.json())
           .then((result) => {
-            console.log("dltId", result);
+            // console.log("dltId", result);
             if (result.deletedCount) {
               setIsDelete(true);
             } else {

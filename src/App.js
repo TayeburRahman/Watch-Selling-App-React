@@ -7,27 +7,28 @@ import brandDark from "assets/images/logo-ct-dark.png";
 import brandWhite from "assets/images/logo-ct.png";
 import theme from "assets/theme";
 import themeDark from "assets/theme-dark";
-import UserProfile from "Component/Page/About/UserProfile/UserProfile";
-import UserOrder from "Component/Page/ManageAllOder/UserOrder";
 import MDBox from "components/MDBox";
 import { setMiniSidenav, setOpenConfigurator, useMaterialUIController } from "context";
 import Configurator from "examples/Configurator";
 import Sidenav from "examples/Sidenav";
 import AuthProvider from "Firebase/Context/AuthProvider";
+import UserProfile from "local/Page/About/UserProfile/UserProfile";
+import UserOrder from "local/Page/ManageAllOder/UserOrder";
+import AdminRoute from "PrivateRoute/AdminRoute";
 import PrivateRoute from "PrivateRoute/PrivateRoute";
 import { useEffect, useState } from "react";
 // react-router components
 import { Navigate, Route, Routes, useLocation } from "react-router-dom";
 import routes from "routes";
-import AboutUs from './Component/Page/About/AboutUs';
-import AllProduct from './Component/Page/AllProduct/AllProduct';
+import AboutUs from './local/Page/About/AboutUs';
+import AllProduct from './local/Page/AllProduct/AllProduct';
 // import Dashboard from "./Components/Page/Dashbord/Dashboard";
-import Home from './Component/Page/Home/Home';
-import ManageAllOder from './Component/Page/ManageAllOder/ManageAllOder';
-import ProductCalection from './Component/Page/ProductCalection';
-import Spping from './Component/Page/Spping/Spping';
-import Login from './Component/UserLogin/Login';
-import Register from './Component/UserLogin/Register';
+import Home from './local/Page/Home/Home';
+import ManageAllOder from './local/Page/ManageAllOder/ManageAllOder';
+import ProductCalection from './local/Page/ProductCalection';
+import Spping from './local/Page/Spping/Spping';
+import Login from './local/UserLogin/Login';
+import Register from './local/UserLogin/Register';
 
 
 export default function App() {
@@ -129,8 +130,8 @@ export default function App() {
 
 
    const cobainLocal = home && login && NavHideDashboard &&  homeMain && service &&  aLLProduct && aboutUs && productId && manageAllOrders ;
-   
    const cobainDashboard = dashboard && profile && notifications &&  billing && tables ;
+   const localRoute = home && login && NavHideDashboard &&  homeMain && service &&  aLLProduct && aboutUs && productId && manageAllOrders && dashboard && profile && notifications &&  billing && tables ;
 
   return  (
     <> 
@@ -140,8 +141,7 @@ export default function App() {
         <CssBaseline />
         {layout === "dashboard" && (
         <>
-        {/* <AdminRoute>  */}
-           <PrivateRoute>
+        <AdminRoute>  
            <Sidenav
             color={sidenavColor}
             brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
@@ -156,9 +156,8 @@ export default function App() {
           <Routes>
           {getRoutes(routes)} 
                 <Route path="/dashboard" element={<Navigate />} />
-          </Routes>
-           </PrivateRoute>
-           {/* </AdminRoute> */}
+          </Routes> 
+        </AdminRoute>
         </>
       )}
        </ThemeProvider>
@@ -178,9 +177,8 @@ export default function App() {
           <Route path="/order/user" element={<PrivateRoute><UserOrder/> </PrivateRoute>} />       
           <Route path="user.profile" element={<PrivateRoute><UserProfile/> </PrivateRoute>} />   
        </Routes>
-      )}
-      </AuthProvider>
- 
+      )} 
+      </AuthProvider> 
     </>
   );
 }

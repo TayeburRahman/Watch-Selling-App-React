@@ -20,7 +20,7 @@ const style = {
 export default function EditModal({reset,register,handleSubmit,handleClose, product,open}) {
     
      const onSubmit = (data) => { 
-         console.log(data)
+        //  console.log(data)
         fetch(`https://sleepy-journey-86126.herokuapp.com/updateProduct/${product._id}`, {
          method: "PUT",
          headers: {

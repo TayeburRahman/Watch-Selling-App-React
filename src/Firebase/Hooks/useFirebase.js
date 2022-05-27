@@ -1,5 +1,5 @@
 import {
-    createUserWithEmailAndPassword, getAuth, getIdToken, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile
+  createUserWithEmailAndPassword, getAuth, getIdToken, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile
 } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeFirebase from "../FirebaseInit";
@@ -11,7 +11,7 @@ const useFirebase = () => {
   const [isLoading, setIstLoading] = useState(true);
   const [authError, setError] = useState("");
   const [admin, setAdmin] = useState('');
-console.log(admin)
+// console.log(admin)
 
   const auth = getAuth();
   const provider = new GoogleAuthProvider();

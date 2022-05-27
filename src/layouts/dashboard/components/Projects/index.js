@@ -3,12 +3,12 @@
 // @mui material components
 import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
-import AllOder from "Component/Page/AllOderProducts/AllOder";
 // Watch Selling App React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 // Data
 import data from "layouts/dashboard/components/Projects/data";
+import AllOder from "local/Page/AllOderProducts/AllOder";
 import { useEffect, useState } from "react";
 
 

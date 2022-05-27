@@ -16,7 +16,7 @@ import Swal from 'sweetalert2';
 
 export default function AllOderProduct() {
     const [orders, setOrders] = useState([{}]);
-    console.log('orders',orders); 
+    // console.log('orders',orders); 
     const [isUpdate, setIsUpdate] = useState(null);
     const [isDelete, setIsDelete] = useState(false);
 
@@ -45,7 +45,7 @@ export default function AllOderProduct() {
             })
               .then((res) => res.json())
               .then((result) => {
-                console.log("dltId", result);
+                // console.log("dltId", result);
                 if (result.deletedCount) {
                   setIsDelete(true);
                 } else {
@@ -57,7 +57,7 @@ export default function AllOderProduct() {
       };
 
     const handleUpdateOrders = (id) => {
-        console.log("id", id);
+        // console.log("id", id);
         id.state = "Approved";
         const url = `https://sleepy-journey-86126.herokuapp.com/updateOrder/${id._id}`;
         fetch(url, {
