@@ -69,12 +69,12 @@ const ProductDTL = () => {
             <div className="width20">
              <label  className="card" onClick={()=> handleChange('S')}>
                   <input 
-                         style={{marginTop:'14px'}}
+                         style={{marginTop:'14px', display:'none'}}
                          type="radio" 
                          className="radio" 
                          default="checked"
                          name="plan"
-                         checked style={{display:'none'}} />
+                         checked />
                    <div className=" plan-details">
                          S
                   </div> 
@@ -84,12 +84,12 @@ const ProductDTL = () => {
              <div className="width20">
              <label  className="card" onClick={()=> handleChange('M')}>
                   <input 
-                         style={{marginTop:'14px'}}
+                         style={{marginTop:'14px', display:'none'}}
                          type="radio" 
                          className="radio" 
                          default="checked"
                          name="plan"
-                         checked style={{display:'none'}} />
+                         checked   />
                    <div className=" plan-details">
                          M
                   </div> 
@@ -99,12 +99,12 @@ const ProductDTL = () => {
              <div className="width20">
              <label  className="card" onClick={()=> handleChange('L')}>
                   <input 
-                         style={{marginTop:'14px'}}
+                         style={{marginTop:'14px', display:'none'}}
                          type="radio" 
                          className="radio" 
                          default="checked"
                          name="plan"
-                         checked style={{display:'none'}} />
+                         checked  />
                    <div className=" plan-details">
                     
                         L
